@@ -42,8 +42,7 @@ const CurrentDay = styled.div`
   background: #f00;
 `
 
-const CalendarGrid = ({startDay, today}) => {
-  const totalDays = 42
+const CalendarGrid = ({startDay, today, totalDays}) => {
   const day = startDay.clone().subtract(1, 'day')
   const daysArray = [...Array(totalDays)].map(() => day.add(1, 'day').clone())
   const isCurrentDay = (day) => moment().isSame(day, 'day')

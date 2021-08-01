@@ -1,0 +1,22 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Go to bed",
+      "description": "Long time after 12",
+      "timestamp": 1627775999
+    },
+    {
+      "id": 2,
+      "title": "Buy a car",
+      "description": "Buy a car in Canada",
+      "timestamp": 1627776000
+    },
+    {
+      "id": 3,
+      "title": "Test new month",
+      "description": "This should be in september",
+      "timestamp": 1630627200
+    }
+  ]
+}
