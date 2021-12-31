@@ -36,13 +36,13 @@ function App() {
     fetch(`${URL}/events?timestamp_gte=${startTimestampQuery}&timestamp_lte=${endTimestampQuery}`)
       .then(res => res.json())
       .then(setEvents)
-  }, [])
+  }, [startTimestampQuery, endTimestampQuery])
 
   return (
     <ShadowsWrapper>
       <Header/>
       <Monitor today={today} prevHandler={prevHandler} todayHandler={todayHandler} nextHandler={nextHandler} />
-      <CalendarGrid startDay={startDay} today={today} totalDays={totalDays}/>
+      <CalendarGrid startDay={startDay} today={today} totalDays={totalDays} events={events}/>
     </ShadowsWrapper>
   );
 }
